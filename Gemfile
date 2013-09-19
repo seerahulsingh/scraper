@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.0'
 gem 'nokogiri'
 gem 'mechanize'
-
+gem 'protected_attributes'
 group :development, :test do 
   gem 'mysql2'
   gem 'therubyracer'
