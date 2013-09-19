@@ -59,7 +59,7 @@ namespace :scrape do
                 description = strip_or_self!(desc)
                 puts info << name << address << description
 
-                info.each { |str| str.encode!('utf-8', 'iso-8859-1')  }
+                info.each { |str| str.encode!('UTF-16', 'UTF-8', :invalid => :replace)  }
 
                 @restaurant =Restaurant.new
                 @restaurant.name = info[0]
@@ -123,7 +123,7 @@ namespace :scrape do
                     description = strip_or_self!(desc)
                     puts info << name << address << description
 
-                    info.each { |str| str.encode!('utf-8', 'iso-8859-1')  }
+                    info.each { |str| str.encode!('UTF-16', 'UTF-8', :invalid => :replace)  }
 
                     @restaurant =Restaurant.new
                     @restaurant.name = info[0]
