@@ -2,22 +2,25 @@
 <table width="100%">
 	<tr>
 		<th width="20%">Name</th>
-		<th width="30%">Address</th>
-		<th width="50%">Description</th>
+		<th width="25%">Address</th>
+		<th width="10%">Postcode</th>
+		<th width="45%">Description</th>
 	</tr>
 	<tr>
-		<td colspan="3"><hr/></td>
+		<td colspan="4"><hr/></td>
 	</tr>
 	<% @rest.each do |r| %>
 	<tr>
 		<td><%= r.name%></td>
 		<td><%= r.address%></td>
+		<td><%= r.postcode %></td>
 		<td><%= r.description%></td>
 	</tr>
 	<tr>
-		<td colspan="3"><hr/></td>
+		<td colspan="4"><hr/></td>
 	</tr>
 	<tr>
+		<td>&nbsp;</td>
 		<td>&nbsp;</td>
 		<td>&nbsp;</td>
 		<td>&nbsp;</td>

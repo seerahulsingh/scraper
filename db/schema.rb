@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130917073153) do
+ActiveRecord::Schema.define(version: 20130923072705) do
 
   create_table "restaurants", force: true do |t|
     t.string   "name"
@@ -45,6 +45,7 @@ ActiveRecord::Schema.define(version: 20130917073153) do
     t.string   "website"
     t.text     "halal_status"
     t.string   "short_address"
+    t.string   "flag"
   end
 
 end
